@@ -1,0 +1,47 @@
+# Thaumcraft4 Block mapping (built against version 4.0.5b for MC1.6.4)
+version:1.6.4
+modname:Thaumcraft
+# Configuration file
+cfgfile:config/Thaumcraft.cfg
+#Texture Path
+texturepath:assets/thaumcraft/textures/blocks/
+# Files
+texture:id=arcane_stone
+texture:id=pedestal_top
+texture:id=greatwoodleaves
+texture:id=greatwoodtop
+texture:id=greatwoodside
+texture:id=paving_stone_warding
+texture:id=silverwoodleaves
+texture:id=silverwoodside
+texture:id=silverwoodtop
+texture:id=taint_crust
+texture:id=taint_soil
+texture:id=thaumiumblock
+
+# Blocks
+#Arcane Stone Block
+block:id=BlockCosmeticSolid,data=6,allfaces=0,txtid=pedestal_top,stdrot=true
+#Arcane Stone Bricks
+block:id=BlockCosmeticSolid,data=7,allfaces=0,txtid=arcane_stone,stdrot=true
+#Silverwood tree
+block:id=BlockMagicalLeaves,data=1,allfaces=0,txtid=silverwoodleaves,stdrot=true
+block:id=BlockMagicalLeaves,data=9,allfaces=0,txtid=silverwoodleaves,stdrot=true
+block:id=BlockMagicalLeaves,data=13,allfaces=0,txtid=silverwoodleaves,stdrot=true
+block:id=BlockMagicalLog,data=1,allsides=0:silverwoodside,topbottom=0:silverwoodtop,stdrot=true
+block:id=BlockMagicalLog,data=5,topbottom=0:silverwoodside,north=0:silverwoodtop,south=0:silverwoodtop,east=0:silverwoodside,west=0:silverwoodside,stdrot=true
+block:id=BlockMagicalLog,data=9,topbottom=0:silverwoodside,north=0:silverwoodside,south=0:silverwoodside,east=0:silverwoodtop,west=0:silverwoodtop,stdrot=true
+#Greatwood tree
+block:id=BlockMagicalLeaves,data=0,allfaces=0,txt=greatwoodleaves,stdrot=true
+block:id=BlockMagicalLeaves,data=8,allfaces=0,txt=greatwoodleaves,stdrot=true
+block:id=BlockMagicalLog,data=0,topbottom=0:greatwoodtop,allsides=0:greatwoodside,stdrot=true
+block:id=BlockMagicalLog,data=4,topbottom=0:greatwoodside,north=0:greatwoodtop,south=0:greatwoodtop,east=0:greatwoodside,west=0:greatwoodside,stdrot=true
+block:id=BlockMagicalLog,data=8,topbottom=0:greatwoodside,north=0:greatwoodside,south=0:greatwoodside,east=0:greatwoodtop,west=0:greatwoodtop,stdrot=true
+#Paving Stone of Warding
+block:id=BlockCosmeticSolid,data=3,allfaces=0,txtid=paving_stone_warding,stdrot=true
+#Tainted Crust
+block:id=BlockTaint,data=0,allfaces=0,txtid=taint_crust,stdrot=true
+#Tainted Soil
+block:id=BlockTaint,data=1,allfaces=0,txtid=taint_soil,stdrot=true
+#Thaumium Block
+block:id=BlockCosmeticSolid,data=4,allfaces=0,txtid=thaumiumblock,stdrot=true
