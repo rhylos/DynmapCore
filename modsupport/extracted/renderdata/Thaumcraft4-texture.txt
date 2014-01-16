@@ -6,42 +6,107 @@ cfgfile:config/Thaumcraft.cfg
 #Texture Path
 texturepath:assets/thaumcraft/textures/blocks/
 # Files
+texture:id=al_furnace_front_off
+texture:id=al_furnace_side
+texture:id=al_furnace_top
+texture:id=amberblock
+texture:id=amberblock_top
+texture:id=amberbrick
+texture:id=amberore
 texture:id=arcane_stone
-texture:id=pedestal_top
-texture:id=greatwoodleaves
+texture:id=cinnibar
+texture:id=fleshblock
+texture:id=greatwoodleaveslow
 texture:id=greatwoodtop
 texture:id=greatwoodside
+texture:id=infusedorestone
+texture:id=lifterside
+texture:id=liftertop
+texture:id=obsidiantile
+texture:id=obsidiantotembase
+texture:id=obsidiantotem1
+texture:id=obsidiantotem2
+texture:id=paving_stone_travel
 texture:id=paving_stone_warding
-texture:id=silverwoodleaves
+texture:id=pedestal_top
+texture:id=planks_greatwood
+texture:id=planks_silverwood
+texture:id=silverwoodleaveslow
 texture:id=silverwoodside
 texture:id=silverwoodtop
 texture:id=taint_crust
 texture:id=taint_soil
+texture:id=tallowblock
+texture:id=tallowblock_top
 texture:id=thaumiumblock
+texture:id=woodplain
 
 # Blocks
+#Air Infused Stone
+block:id=BlockCustomOre,data=1,allfaces=0,txtid=infusedorestone,stdrot=true
+#Alchemical Furnace
+block:id=BlockStoneDevice,data=0,top=0:al_furnace_top,bottom=0:al_furnace_side,allsides=0:al_furnace_front_off,stdrot=true
+#Amber Bearing Stone
+block:id=BlockCustomOre,data=7,allfaces=0,txtid=amberore,stdrot=true
+#Amber Block
+block:id=BlockCosmeticOpaque,data=0,topbottom=0:amberblock_top,allsides=0:amberblock,stdrot=true
+#Amber Bricks
+block:id=BlockCosmeticOpaque,data=1,allfaces=0,txtid=amberbrick,stdrot=true
+#Arcane Levitator
+block:id=BlockLifter,data=0,top=0:liftertop,bottom=0:woodplain,allsides=0:lifterside,stdrot=true
 #Arcane Stone Block
 block:id=BlockCosmeticSolid,data=6,allfaces=0,txtid=pedestal_top,stdrot=true
 #Arcane Stone Bricks
 block:id=BlockCosmeticSolid,data=7,allfaces=0,txtid=arcane_stone,stdrot=true
-#Silverwood tree
-block:id=BlockMagicalLeaves,data=1,allfaces=0,txtid=silverwoodleaves,stdrot=true
-block:id=BlockMagicalLeaves,data=9,allfaces=0,txtid=silverwoodleaves,stdrot=true
-block:id=BlockMagicalLeaves,data=13,allfaces=0,txtid=silverwoodleaves,stdrot=true
-block:id=BlockMagicalLog,data=1,allsides=0:silverwoodside,topbottom=0:silverwoodtop,stdrot=true
-block:id=BlockMagicalLog,data=5,topbottom=0:silverwoodside,north=0:silverwoodtop,south=0:silverwoodtop,east=0:silverwoodside,west=0:silverwoodside,stdrot=true
-block:id=BlockMagicalLog,data=9,topbottom=0:silverwoodside,north=0:silverwoodside,south=0:silverwoodside,east=0:silverwoodtop,west=0:silverwoodtop,stdrot=true
+#Block of Flesh
+block:id=BlockTaint,data=2,allfaces=0,txtid=fleshblock,stdrot=true
+#Charged Obsidian Totem
+block:id=BlockCosmeticSolid,data=8,topbottom=0:obsidiantotembase,allsides=0:obsidiantotem2,stdrot=true
+#Cinnabar Ore
+block:id=BlockCustomOre,data=0,allfaces=0,txtid=cinnibar,stdrot=true
+#Earth Infused Stone
+block:id=BlockCustomOre,data=4,allfaces=0,txtid=infusedorestone,stdrot=true
+#Entropy Infused Stone
+block:id=BlockCustomOre,data=6,allfaces=0,txtid=infusedorestone,stdrot=true
+#Fire Infused Stone
+block:id=BlockCustomOre,data=2,allfaces=0,txtid=infusedorestone,stdrot=true
+#Greatwood Planks
+block:id=BlockWoodenDevice,data=6,allfaces=0,txtid=planks_greatwood,stdrot=true
 #Greatwood tree
-block:id=BlockMagicalLeaves,data=0,allfaces=0,txt=greatwoodleaves,stdrot=true
-block:id=BlockMagicalLeaves,data=8,allfaces=0,txt=greatwoodleaves,stdrot=true
+block:id=BlockMagicalLeaves,data=0,allfaces=0,txt=greatwoodleaveslow,stdrot=true
+block:id=BlockMagicalLeaves,data=4,allfaces=0,txt=greatwoodleaveslow,stdrot=true
+block:id=BlockMagicalLeaves,data=8,allfaces=0,txt=greatwoodleaveslow,stdrot=true
+#?block:id=BlockMagicalLeaves,data=12,allfaces=0,txt=greatwoodleaveslow,stdrot=true
 block:id=BlockMagicalLog,data=0,topbottom=0:greatwoodtop,allsides=0:greatwoodside,stdrot=true
 block:id=BlockMagicalLog,data=4,topbottom=0:greatwoodside,north=0:greatwoodtop,south=0:greatwoodtop,east=0:greatwoodside,west=0:greatwoodside,stdrot=true
 block:id=BlockMagicalLog,data=8,topbottom=0:greatwoodside,north=0:greatwoodside,south=0:greatwoodside,east=0:greatwoodtop,west=0:greatwoodtop,stdrot=true
+#Obsidian Tile
+block:id=BlockCosmeticSolid,data=1,allfaces=0,txtid=obsidiantile,stdrot=true
+#Obsidian Totem
+block:id=BlockCosmeticSolid,data=0,topbottom=0:obsidiantotembase,allsides=0:obsidiantotem1,stdrot=true
+#Order Infused Stone
+block:id=BlockCustomOre,data=5,allfaces=0,txtid=infusedorestone,stdrot=true
+#Paving Stone of Travel
+block:id=BlockCosmeticSolid,data=2,allfaces=0,txtid=paving_stone_travel,stdrot=true
 #Paving Stone of Warding
 block:id=BlockCosmeticSolid,data=3,allfaces=0,txtid=paving_stone_warding,stdrot=true
+#Silverwood Planks
+block:id=BlockWoodenDevice,data=7,allfaces=0,txtid=planks_silverwood,stdrot=true
+#Silverwood tree
+block:id=BlockMagicalLeaves,data=1,allfaces=0,txtid=silverwoodleaveslow,stdrot=true
+block:id=BlockMagicalLeaves,data=5,allfaces=0,txtid=silverwoodleaveslow,stdrot=true
+block:id=BlockMagicalLeaves,data=9,allfaces=0,txtid=silverwoodleaveslow,stdrot=true
+block:id=BlockMagicalLeaves,data=13,allfaces=0,txtid=silverwoodleaveslow,stdrot=true
+block:id=BlockMagicalLog,data=1,allsides=0:silverwoodside,topbottom=0:silverwoodtop,stdrot=true
+block:id=BlockMagicalLog,data=5,topbottom=0:silverwoodside,north=0:silverwoodtop,south=0:silverwoodtop,east=0:silverwoodside,west=0:silverwoodside,stdrot=true
+block:id=BlockMagicalLog,data=9,topbottom=0:silverwoodside,north=0:silverwoodside,south=0:silverwoodside,east=0:silverwoodtop,west=0:silverwoodtop,stdrot=true
 #Tainted Crust
 block:id=BlockTaint,data=0,allfaces=0,txtid=taint_crust,stdrot=true
 #Tainted Soil
 block:id=BlockTaint,data=1,allfaces=0,txtid=taint_soil,stdrot=true
+#Tallow Block
+block:id=BlockCosmeticSolid,data=5,topbottom=0:tallowblock_top,allsides=0:tallowblock,stdrot=true
 #Thaumium Block
 block:id=BlockCosmeticSolid,data=4,allfaces=0,txtid=thaumiumblock,stdrot=true
+#Water Infused Stone
+block:id=BlockCustomOre,data=3,allfaces=0,txtid=infusedorestone,stdrot=true
